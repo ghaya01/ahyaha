@@ -2,10 +2,20 @@ package com.example.ahyaha.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Light Theme Colors
+val BloodRed = Color(0xFFD32F2F)       // Primary color - Emergency red
+val PlasmaOrange = Color(0xFFFF5252)   // Secondary color - Vibrant accent
+val TrustBlue = Color(0xFF2196F3)      // Tertiary color - Medical blue
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// Dark Theme Colors
+val EmergencyRed = Color(0xFFB71C1C)   // Dark theme primary - Deep urgency red
+val CrimsonAccent = Color(0xFFEF5350)  // Dark theme secondary
+val NightBlue = Color(0xFF1976D2)      // Dark theme tertiary
+
+// Neutral Colors
+val HospitalWhite = Color(0xFFF5F5F5)  // Background color - Clean medical white
+val SteelGray = Color(0xFF424242)      // Text/icon color - Professional gray
+
+// Accent Colors
+val AlertAmber = Color(0xFFFFA000)     // Warning color
+val LifeGreen = Color(0xFF388E3C)      // Success color
