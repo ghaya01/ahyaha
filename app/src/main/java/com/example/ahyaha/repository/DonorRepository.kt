@@ -8,6 +8,7 @@ object DonorRepository {
     fun getAllDonors(): List<Donor> {
         // Simulating fetching data from a data source
         return listOf(
+
             Donor(
                 id = "1",
                 name = "John Doe",
@@ -36,7 +37,7 @@ object DonorRepository {
             ),
             Donor(
                 id = "3",
-                name = "Michael Johnson",
+                name = "Michael ",
                 email = "michael.johnson@example.com",
                 phoneNumber = "5555555555",
                 profilePicture = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -72,7 +73,22 @@ object DonorRepository {
                 lastDonationDate = Date(),
                 createdAt = Date(),
                 updatedAt = Date()
-            )
+            ),
+            Donor(
+                id = "6",
+                name = "okba ",
+                email = "michael.johnson@example.com",
+                phoneNumber = "5555555555",
+                profilePicture = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                bloodGroup = "O",
+                Rh = "+",
+                location = "Chicago",
+                lastDonationDate = Date(),
+                createdAt = Date(),
+                updatedAt = Date()
+            ),
+
         )
     }
 }
+
