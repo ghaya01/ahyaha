@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.BottomAppBar
@@ -43,8 +44,8 @@ fun BottomNavigationBar(onTabSelected: (Int) -> Unit) {
 
         IconButton(onClick = { }) {
             Icon(
-                Icons.Default.Search,
-                contentDescription = "research",
+                Icons.Default.List,
+                contentDescription = "list",
                 modifier = Modifier.size(24.dp)
             )
         }

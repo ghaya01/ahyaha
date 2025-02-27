@@ -43,7 +43,7 @@ fun RegularDonorsSection(donors: List<Donor>) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = "Regulqr Domors",
+                text = "Regular Domors",
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 modifier = Modifier.padding(end = 4.dp)
@@ -98,7 +98,7 @@ fun DonorCard(donor: Donor) {
 
                 Spacer(modifier = Modifier.height(8.dp))
 
-                Text(text = donor.name, style = MaterialTheme.typography.titleSmall, textAlign = TextAlign.Center)
+                Text(text = donor.name, style = MaterialTheme.typography.titleSmall,  textAlign = TextAlign.Center)
                 Text(text = "${donor.bloodGroup}${donor.Rh}",
                     style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center)
                 Text(text = donor.location, style = MaterialTheme.typography.labelSmall, textAlign = TextAlign.Center)
