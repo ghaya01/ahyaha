@@ -27,6 +27,7 @@ import com.example.ahyaha.model.Donor
 import com.example.ahyaha.model.News
 import com.example.ahyaha.viewmodel.BloodTypeViewModel
 import com.example.ahyaha.viewmodel.DonorViewModel
+import com.example.ahyaha.viewmodel.NewsViewModel
 
 @Composable
 fun MainScreen(
@@ -111,8 +112,8 @@ fun MainScreen(
                             contentPadding = PaddingValues(horizontal = 16.dp),
                             horizontalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
-                            items(NewsState.News) { News ->
-                                NewsCard(News = News)
+                            items(NewsState.newsList) { News ->
+                                NewsCard(news = News)
                             }
                         }
                     }
