@@ -67,8 +67,8 @@ fun ActivitySection() {
             contentPadding = PaddingValues(horizontal = 8.dp)
         ) {
             val activities = listOf(
-                ActivityItem("Blood Recipient", "120 posts", R.drawable.blood_3),
-                ActivityItem("Blood Donor", "130 posts, Stay healthy", R.drawable.blood_1),
+                ActivityItem("Blood Recipient", "99 posts", R.drawable.blood_3),
+                ActivityItem("Blood Donor", "100 posts, Stay healthy", R.drawable.blood_1),
                 ActivityItem("Create Post", "One Step to Go! Super Easy", R.drawable.blood_2)
 
             )
