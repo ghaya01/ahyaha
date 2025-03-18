@@ -62,11 +62,11 @@ fun RecentPostsSection() {
         Column {
             val posts = listOf(
                 PostItem("Headline", "Description of the post...",
-                    "Today - 23/01/2025", R.drawable.imag_4),
+                    "Today - 12/02/2025", R.drawable.imag_4),
                 PostItem("Headline", "Description of the post...",
-                    "Today - 22/01/2025", R.drawable.imag_5) ,
+                    "Today - 13/02/2025", R.drawable.imag_5) ,
                 PostItem("Headline", "Description of the post...",
-                    "Today - 22/01/2025", R.drawable.imag)
+                    "Today - 14/02/2025", R.drawable.imag)
 
 
             )

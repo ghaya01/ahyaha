@@ -93,7 +93,7 @@ fun Events() {
 
 
                 Text(
-                    text = "Do some actions",
+                    text = "Take some action",
                     fontSize = 14.sp,
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Start
