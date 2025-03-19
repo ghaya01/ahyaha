@@ -30,7 +30,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.ahyaha.R
-//اخرى الفعليات
+
 @Composable
 fun Events() {
     Card(
@@ -75,7 +75,7 @@ fun Events() {
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
-                        text = "Recent Events",
+                        text = ":Recent Events",
                         fontWeight = FontWeight.Bold,
                         fontSize = 18.sp,
                         modifier = Modifier

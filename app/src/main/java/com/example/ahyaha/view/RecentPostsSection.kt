@@ -29,21 +29,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.ahyaha.R
-//اخري المنشورا
 
-// بيانات المنشور
 data class PostItem(val title: String, val description: String, val date: String, val imageRes: Int)
 @Composable
 fun RecentPostsSection() {
     Column(modifier = Modifier.padding(8.dp)) {
-        // عنوان القسم مع أيقونة السهم
+
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start,
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = "Recent Post",
+                text = ":Recent Post",
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 modifier = Modifier.padding(end = 4.dp)

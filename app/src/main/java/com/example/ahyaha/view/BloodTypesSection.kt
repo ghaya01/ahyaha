@@ -32,7 +32,7 @@ fun BloodTypesSection() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
-            text = "Blood types",
+            text = ":Blood types",
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp,
             modifier = Modifier.padding(end = 4.dp)

@@ -31,8 +31,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.ahyaha.R
-//قسم اخرى النشطات
-// تحديث البيانات لتشمل الصورة لكل عنصر
 data class ActivityItem(val title: String, val subtitle: String, val imageRes: Int)
 
 @Composable
@@ -45,20 +43,21 @@ fun ActivitySection() {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = "Activity As",
+                text = ":Activity As",
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
+                color = Color(0xFF37474F), // Dark grayish-blue for better readability
                 modifier = Modifier.padding(end = 4.dp)
             )
 
             Icon(
                 imageVector = Icons.Default.ArrowForward,
                 contentDescription = "Arrow Icon",
+                tint = Color(0xFFD32F2F), // Red color for emphasis
                 modifier = Modifier.size(20.dp)
             )
         }
 
-        // قائمة أفقية للعناصر مع صور خاصة بكل عنصر
         LazyRow(
             modifier = Modifier
                 .fillMaxWidth()
@@ -70,7 +69,6 @@ fun ActivitySection() {
                 ActivityItem("Blood Recipient", "99 posts", R.drawable.blood_3),
                 ActivityItem("Blood Donor", "100 posts, Stay healthy", R.drawable.blood_1),
                 ActivityItem("Create Post", "Just one Step! So easy", R.drawable.blood_2)
-
             )
 
             items(activities) { activity ->
@@ -87,13 +85,15 @@ fun ActivityCard(activity: ActivityItem) {
             .width(120.dp)
             .padding(4.dp),
         shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(0xFFF5F5F5) // Light gray background
+        ),
         elevation = CardDefaults.cardElevation(4.dp)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.padding(8.dp)
         ) {
-            // صورة خاصة بكل عنصر
             Image(
                 painter = painterResource(id = activity.imageRes),
                 contentDescription = activity.title,
@@ -104,18 +104,18 @@ fun ActivityCard(activity: ActivityItem) {
 
             Spacer(modifier = Modifier.height(4.dp))
 
-
             Text(
                 text = activity.title,
                 fontWeight = FontWeight.Bold,
                 fontSize = 14.sp,
+                color = Color(0xFF37474F), // Dark gray for contrast
                 textAlign = TextAlign.Center
             )
 
             Text(
                 text = activity.subtitle,
                 fontSize = 12.sp,
-                color = Color.Gray,
+                color = Color(0xFF607D8B), // Blue-gray for subtlety
                 textAlign = TextAlign.Center
             )
         }

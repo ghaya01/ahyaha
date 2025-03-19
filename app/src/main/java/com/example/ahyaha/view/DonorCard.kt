@@ -32,18 +32,18 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.ahyaha.R
 import com.example.ahyaha.model.Donor
-//معلومات النتبرعين
+
 @Composable
 fun RegularDonorsSection(donors: List<Donor>) {
     Column(modifier = Modifier.padding(16.dp)) {
-        // عنوان القسم مع أيقونة السهم
+
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start,
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = "Regular Domors",
+                text = ":Regular Donors",
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 modifier = Modifier.padding(end = 4.dp)
