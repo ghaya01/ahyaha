@@ -16,6 +16,7 @@ import androidx.navigation.NavController
 import com.example.ahyaha.presentation.viewmodel.BloodTypeViewModel
 import com.example.ahyaha.presentation.viewmodel.DonorViewModel
 import com.example.ahyaha.presentation.view.components.*
+import com.example.ahyaha.ui.theme.PlasmaOrange
 
 @Composable
 fun MainScreen(
@@ -37,7 +38,7 @@ fun MainScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = { navController.navigate("addDonor") }, // ✅ التنقل للشاشة الصحيحة
-                containerColor = MaterialTheme.colorScheme.primary,
+                containerColor =PlasmaOrange,
                 elevation = FloatingActionButtonDefaults.elevation(8.dp)
             ) {
                 Icon(Icons.Filled.Add, contentDescription = "Add a donor")
