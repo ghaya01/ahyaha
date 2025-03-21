@@ -20,7 +20,7 @@ data class BloodTypeState(
 
 @HiltViewModel
 class BloodTypeViewModel @Inject constructor(private val getBloodTypesUseCase: GetBloodTypesUseCase) : ViewModel() {
-    
+
     private val _bloodTypeState = MutableStateFlow(BloodTypeState())
     val bloodTypeState: StateFlow<BloodTypeState> = _bloodTypeState.asStateFlow()
 
@@ -32,7 +32,7 @@ class BloodTypeViewModel @Inject constructor(private val getBloodTypesUseCase: G
     private fun getBloodTypes() {
         viewModelScope.launch {
             getBloodTypesUseCase().collect{bloodTypes ->
-            _bloodTypeState.value = _bloodTypeState.value.copy(bloodTypes = bloodTypes)
+                _bloodTypeState.value = _bloodTypeState.value.copy(bloodTypes = bloodTypes)
             }
         }
     }

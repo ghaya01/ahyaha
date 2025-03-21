@@ -23,7 +23,7 @@ data class UIState(
 
 @HiltViewModel
 class DonorViewModel @Inject constructor(private val getDonorsUseCase: GetDonorsUseCase) : ViewModel() {
-    
+
     private val _uiState = MutableStateFlow(UIState())
     val uiState: StateFlow<UIState> = _uiState.asStateFlow()
 
