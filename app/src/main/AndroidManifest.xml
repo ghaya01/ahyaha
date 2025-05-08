@@ -6,7 +6,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+<<<<<<< HEAD
         android:name=".AhyahaApp"
+=======
+>>>>>>> 72fc86b69f8fae13075f897414c2b03b2cb1801c
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

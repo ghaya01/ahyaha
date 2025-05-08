@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+<<<<<<< HEAD
     alias(libs.plugins.dagger.hilt.plugin)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.serialization)
@@ -16,6 +17,10 @@ implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3'
 *
 *
 * */
+=======
+}
+
+>>>>>>> 72fc86b69f8fae13075f897414c2b03b2cb1801c
 android {
     namespace = "com.example.ahyaha"
     compileSdk = 35
@@ -50,6 +55,10 @@ android {
         compose = true
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 72fc86b69f8fae13075f897414c2b03b2cb1801c
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -62,6 +71,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     // Coil image loading library for Compose to load and display images efficiently
     implementation(libs.io.coil.kt.compose)
+<<<<<<< HEAD
 
     //Dagger Hilt
     implementation(libs.dagger.hilt)
@@ -77,6 +87,8 @@ dependencies {
     implementation(libs.google.firebase.auth.ktx)
     implementation(libs.google.firebase.firestore.ktx)
 
+=======
+>>>>>>> 72fc86b69f8fae13075f897414c2b03b2cb1801c
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
@@ -89,4 +101,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 72fc86b69f8fae13075f897414c2b03b2cb1801c
 }
